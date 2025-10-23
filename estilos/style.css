@@ -66,3 +66,42 @@ header {
     
     }
 }
+
+main {
+
+}
+
+#ficha {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 8px;
+
+    h1 {
+        color: var(--destaque);
+        margin: 15px 0;
+        font-size: 1.5em;
+        text-align: left;
+    }
+}
+
+.foto {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid var(--fundo-card);
+    outline: 5px solid var(--destaque);
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 1em;
+    margin-top: 15px;
+}
