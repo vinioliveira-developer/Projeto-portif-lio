@@ -68,13 +68,16 @@ header {
 }
 
 main {
-
+    display: grid;
+    grid-template-columns: auto 90vw auto;
 }
 
 #ficha {
     background-color: var(--fundo-card);
     padding: 20px;
     border-radius: 8px;
+    grid-column: 2;
+    margin-top: 20px;
 
     h1 {
         color: var(--destaque);
@@ -104,4 +107,13 @@ main {
     font-size: 1.5em;
     gap: 1em;
     margin-top: 15px;
+
+    a {
+        color: var(--destaque);
+        transition: color 0.5s;
+    }
+
+    a:hover {
+        color: var(--destaque-inverso)
+    }
 }
