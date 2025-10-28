@@ -43,6 +43,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-content: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
 }
 
 #menu ul {
@@ -272,6 +275,22 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: auto 300px 1fr auto; /* essa config é para griar as colunas em telas maiores */
+    }
+
+    #ficha {
+        grid-column: 2 / 3; /* essa parte configura a parte lateral da tela para ficar fixa em telas maiores*/
+        height: fit-content;
+        position: sticky;
+        top: 90px;
+    }
+
+    #detalhe {
+        grid-column: 3 / 4;
+    }
+
+
     #skill-container {
         grid-template-columns: 1fr 1fr;
      }
